@@ -1,0 +1,111 @@
+<!---
+1. Implement pages that cater the following functions of AISIS Online:
+  1.1. Home Page — must be named index.html
+  1.2. Update Student Information
+  1.3. Class Schedules
+  1.4. View Student Grades
+2. The following features must be implemented:
+  2.1. Menu to navigate across the different pages
+  2.2. Form fields
+  2.3. Buttons
+  2.4. dummy data or placeholder text to enhance mock up
+3. In a separate document, provide a detailed feature analysis of your redesign process.
+  3.1. Explain the rationale behind redesigning the specific AISIS elements that you selected in the
+context of WCAG 2.1.
+  3.2. Present a mapping of the "flaws" and the design choices implemented to improve them.
+  3.3. Name the file according to the convention IDNumber.pdf.
+--->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet">
+    <!--- FONT AWESOME (FOR ICONS) --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>AISIS</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <div class="ateneologo">
+              <img src="images/ateneologo.png" alt="Ateneo Logo">
+              <span class="nav-item">AISIS</span>
+            </div>
+          </li>
+          <li>
+            <a href="home.html">
+              <i class="fas fa-solid fa-house"></i>
+              <span class="nav-item">Home Page</span>
+            </a>
+          </li>
+          <li>
+            <a href="info.html">
+              <i class="fas fa-solid fa-circle-info"></i>
+              <span class="nav-item">Update Student Info</span>
+            </a>
+          </li>
+          <li>
+            <a href="schedules.html">
+              <i class="fas fa-solid fa-calendar"></i>
+              <span class="nav-item">Class Schedules</span>
+            </a>
+          </li>
+          <li>
+            <a href="grades.html">
+              <i class="fas fa-solid fa-medal"></i>
+              <span class="nav-item">Grades</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-solid fa-arrow-right-from-bracket"></i>
+              <span class="nav-item">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <div class="main-container">
+          <div class="main-top">
+            <h1>Update Student Information</h1>
+          </div>
+          <div class="main-info">
+            <form>
+              <div class="user-details">
+                <div class="input-box">
+                  <label>Email Address</label>
+                  <input placeholder="Example: alden.go@obf.ateneo.edu">
+                </div>
+                <div class="input-box">
+                  <label>Mobile Phone Number</label>
+                  <input placeholder="Format: 09XX-XXX-XXXX">
+                </div>
+                <div class="input-box">
+                  <label>Current Address</label>
+                  <input placeholder="Format: Unit No. and Building, Street, Barangay, City, Zip/Postal Code, Province, Country">
+                </div>
+                <div class="input-box">
+                  <label>Emergency Address</label>
+                  <input placeholder="Format: Unit No. and Building, Street, Barangay, City, Zip/Postal Code, Province, Country">
+                </div>
+                <div class="input-box">
+                  <label>Mother's Address</label>
+                  <input placeholder="Format: Unit No. and Building, Street, Barangay, City, Zip/Postal Code, Province, Country">
+                </div>
+                <div class="input-box">
+                  <label>Father's Address</label>
+                  <input placeholder="Format: Unit No. and Building, Street, Barangay, City, Zip/Postal Code, Province, Country">
+                </div>
+              </div>
+                <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
